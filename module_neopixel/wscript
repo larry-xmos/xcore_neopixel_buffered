@@ -1,0 +1,4 @@
+def use_module(bld):
+    source = bld.path.ant_glob(['src/*.xc'])
+    bld.env.MODULE_XCC_FLAGS = bld.env.XCC_FLAGS + ['-O3']
+    bld.module(source=source, includes=['src'])
