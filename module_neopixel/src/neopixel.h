@@ -6,6 +6,8 @@
 #ifndef __NEOPIXEL_H__
 #define __NEOPIXEL_H__
 
+#include <stdint.h>
+
 // strip buffering
 #define PIXELS(x) ((x)*3)
 
