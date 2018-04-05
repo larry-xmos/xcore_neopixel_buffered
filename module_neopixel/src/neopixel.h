@@ -20,6 +20,8 @@
 #define NEO_GRB 0
 #define NEO_RGB 1
 
+#ifdef __XC__
+
 // neopixel driver interface, Adafruit library-like
 interface neopixel_if {
     // update strip from driver internal buffer
@@ -53,5 +55,6 @@ interface neopixel_if {
         uint32_t order,
         interface neopixel_if server dvr);
 
+#endif
 
 #endif // __NEOPIXEL_H__
